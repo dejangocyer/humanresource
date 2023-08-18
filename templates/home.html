@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}HOME {% endblock %}
+{% block content %}
+<h1>THIS IS THE HOME PAGE</h1>
+
+<table border="2">
+
+    {% for b in b %}
+    <tr>
+        <td>{{ b.id}}</td>
+        <td>{{ b.title}}</td>
+        <td>{{ b.slug}}</td>
+        <td>{{ b.description}}</td>
+    </tr>
+    {% endfor %}
+</table>
+ {% endblock %}
